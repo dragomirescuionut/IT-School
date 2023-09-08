@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("This is a new repo!");
+        Repo r1 = new Repo();
+        r1.newRepo();
+
     }
 }
