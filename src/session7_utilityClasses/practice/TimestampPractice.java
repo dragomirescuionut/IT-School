@@ -1,6 +1,5 @@
-package session7.practice;
+package session7_utilityClasses.practice;
 
-import java.sql.Time;
 import java.sql.Timestamp;
 
 public class TimestampPractice {

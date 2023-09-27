@@ -1,4 +1,4 @@
-package session7.practice;
+package session7_utilityClasses.practice;
 
 import java.util.Scanner;
 
