@@ -2,6 +2,7 @@ package session13_recap.Challenges.LibraryManagementSystem;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 
 public class Library implements LibraryManagement, LibraryQuery {
@@ -64,10 +65,10 @@ public class Library implements LibraryManagement, LibraryQuery {
     }
 
     @Override
-    public List<Book> findBookByIsbn(String isbn) {
+    public List<Book> findBookByIsbn(UUID isbn) {
         List<Book> results = new ArrayList<>();
         for (Book book : books) {
-            if (book.getIsbn().equalsIgnoreCase(isbn)) {
+            if (book.getIsbn().toString().equalsIgnoreCase(isbn.toString())) {
                 results.add(book);
             }
         }

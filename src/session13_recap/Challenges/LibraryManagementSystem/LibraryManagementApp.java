@@ -1,7 +1,9 @@
 package session13_recap.Challenges.LibraryManagementSystem;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public class LibraryManagementApp {
     public static void main(String[] args) {
@@ -11,13 +13,13 @@ public class LibraryManagementApp {
         Library library = new Library(books, members);
 
         //creating authors objects
-        Author author1 = new Author("Harper Lee", "American", "28-04-1926");
-        Author author2 = new Author("Frank Herbert", "American", "08-08-1986");
+        Author author1 = new Author("Harper Lee", "American", LocalDate.of(1900,03,24));
+        Author author2 = new Author("Frank Herbert", "American", LocalDate.of(1920,03,12));
 
         //creating book objects
-        Book book1 = new Book("To Kill a Mockingbird", author1.getName(), "HarperCollins Publishers", "4325-gdsv", 6);
-        Book book2 = new Book("Go Set a Watchman", author1.getName(), "HarperCollins Publishers", "iykl-3jf8", 10);
-        Book book3 = new Book("Dune", author2.getName(), "Chilton Books", "54gt-gh32", 15);
+        Book book1 = new Book("To Kill a Mockingbird", author1.getName(), "HarperCollins Publishers", UUID.randomUUID(), 6);
+        Book book2 = new Book("Go Set a Watchman", author1.getName(), "HarperCollins Publishers", UUID.randomUUID(), 10);
+        Book book3 = new Book("Dune", author2.getName(), "Chilton Books", UUID.randomUUID(), 15);
 
         //adding books into library books list
         library.addBook(book1);
@@ -26,7 +28,7 @@ public class LibraryManagementApp {
 
 
         System.out.println("Find book by Author Name: \n" + library.findBookByAuthor("Harper Lee"));
-        System.out.println("Find books by isbn: \n" + library.findBookByIsbn("4325-gdsv"));
+        System.out.println("Find books by isbn: \n" + library.findBookByIsbn(book2.getIsbn()));
         System.out.println("Find book by Title: \n" + library.findBookByTitle("Dune"));
         library.displayAllBooks();
         System.out.println("\n");

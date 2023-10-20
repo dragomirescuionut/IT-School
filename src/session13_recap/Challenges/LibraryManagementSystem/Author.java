@@ -1,13 +1,14 @@
 package session13_recap.Challenges.LibraryManagementSystem;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Author {
     private String name;
     private String nationality;
-    private String dateOfBirth;
+    private LocalDate dateOfBirth;
 
-    public Author(String name, String nationality, String dateOfBirth) {
+    public Author(String name, String nationality, LocalDate dateOfBirth) {
         this.name = name;
         this.nationality = nationality;
         this.dateOfBirth = dateOfBirth;
@@ -21,7 +22,7 @@ public class Author {
         return nationality;
     }
 
-    public String getDateOfBirth() {
+    public LocalDate getDateOfBirth() {
         return dateOfBirth;
     }
 
