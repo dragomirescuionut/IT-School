@@ -6,10 +6,10 @@ public class Book {
     private String title;
     private String author;
     private String publisher;
-    private String isbn;
+    private UUID isbn;
     private int numberOfCopies;
 
-    public Book(String title, String author, String publisher, String isbn, int numberOfCopies) {
+    public Book(String title, String author, String publisher, UUID isbn, int numberOfCopies) {
         this.title = title;
         this.author = author;
         this.publisher = publisher;
@@ -45,7 +45,7 @@ public class Book {
         return publisher;
     }
 
-    public String getIsbn() {
+    public UUID getIsbn() {
         return isbn;
     }
 

@@ -6,11 +6,7 @@ import java.util.List;
 
 public class Challenges16to20 {
     public static void main(String[] args) {
-        ArrayList<String> monthsList = new ArrayList<>();
-        monthsList.add("June");
-        monthsList.add("July");
-        monthsList.add("December");
-        monthsList.add("May");
+        ArrayList<String> monthsList = new ArrayList<>(List.of("June", "July", "December", "May"));
         printList(monthsList);
 
         System.out.println("\n16. Write a Java program to clone an array list to another array list. ");

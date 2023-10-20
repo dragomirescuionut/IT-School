@@ -10,7 +10,7 @@ public interface LibraryQuery {
 
     List<Book> findBookByAuthor(String Author);
 
-    List<Book> findBookByIsbn(String isbn);
+    List<Book> findBookByIsbn(UUID isbn);
 
     void displayAllMembers();
 
