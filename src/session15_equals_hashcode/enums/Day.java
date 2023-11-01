@@ -1,4 +1,4 @@
-package session15.enums;
+package session15_equals_hashcode.enums;
 
 public enum Day {
     MONDAY(true),

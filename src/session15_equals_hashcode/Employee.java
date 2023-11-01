@@ -1,4 +1,4 @@
-package session15;
+package session15_equals_hashcode;
 
 import java.util.Objects;
 

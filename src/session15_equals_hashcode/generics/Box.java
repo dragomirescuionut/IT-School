@@ -1,4 +1,4 @@
-package session15.generics;
+package session15_equals_hashcode.generics;
 
 public class Box<T> {
     private T object;

@@ -1,4 +1,4 @@
-package session17.practice;
+package session17_stream_optional.practice;
 
 import java.util.ArrayList;
 import java.util.Arrays;
