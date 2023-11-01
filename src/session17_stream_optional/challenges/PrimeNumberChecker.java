@@ -1,4 +1,4 @@
-package session17.challenges;
+package session17_stream_optional.challenges;
 
 public class PrimeNumberChecker {
     public static boolean isPrime(int number){

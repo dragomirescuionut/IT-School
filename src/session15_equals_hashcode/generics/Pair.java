@@ -1,4 +1,4 @@
-package session15.generics;
+package session15_equals_hashcode.generics;
 
 public class Pair<K, V> {
     private K key;

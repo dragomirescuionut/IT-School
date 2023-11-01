@@ -1,4 +1,4 @@
-package session15.challenges.challenge1;
+package session15_equals_hashcode.challenges.challenge1;
 
 public class RectangleApp {
     public static void main(String[] args) {

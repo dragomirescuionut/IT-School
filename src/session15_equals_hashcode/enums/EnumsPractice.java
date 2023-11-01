@@ -1,6 +1,4 @@
-package session15.enums;
-
-import java.sql.SQLOutput;
+package session15_equals_hashcode.enums;
 
 public class EnumsPractice {
     public static void main(String[] args) {

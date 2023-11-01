@@ -1,4 +1,4 @@
-package session17.practice;
+package session17_stream_optional.practice;
 
 public class Product {
     private String name;
